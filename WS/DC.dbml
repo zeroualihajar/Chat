@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Chat" Class="DCDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=desktop-7n0goof;Initial Catalog=Chat;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="ChatConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Message" Member="Message">
+    <Type Name="Message">
+      <Column Name="idmessage" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="contenu" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="idparticipant" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL" CanBeNull="false" />
+      <Association Name="participant_Message" Member="participant" ThisKey="idparticipant" OtherKey="idparticipant" Type="participant" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.participant" Member="participant">
+    <Type Name="participant">
+      <Column Name="idparticipant" Type="System.Decimal" DbType="Decimal(18,0) NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="pseudo" Type="System.String" DbType="NChar(10) NOT NULL" CanBeNull="false" />
+      <Association Name="participant_Message" Member="Message" ThisKey="idparticipant" OtherKey="idparticipant" Type="Message" />
+    </Type>
+  </Table>
+</Database>
