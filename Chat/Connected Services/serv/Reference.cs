@@ -195,64 +195,50 @@ namespace Chat.serv {
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Participer", ReplyAction="*")]
         Chat.serv.ParticiperResponse Participer(Chat.serv.ParticiperRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(AsyncPattern=true, Action="http://tempuri.org/Participer", ReplyAction="*")]
-        System.IAsyncResult BeginParticiper(Chat.serv.ParticiperRequest request, System.AsyncCallback callback, object asyncState);
-        
-        Chat.serv.ParticiperResponse EndParticiper(System.IAsyncResult result);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Participer", ReplyAction="*")]
+        System.Threading.Tasks.Task<Chat.serv.ParticiperResponse> ParticiperAsync(Chat.serv.ParticiperRequest request);
         
         // CODEGEN : La génération du contrat de message depuis le nom d'élément ParticipantsResult de l'espace de noms http://tempuri.org/ n'est pas marqué nillable
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Participants", ReplyAction="*")]
         Chat.serv.ParticipantsResponse Participants(Chat.serv.ParticipantsRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(AsyncPattern=true, Action="http://tempuri.org/Participants", ReplyAction="*")]
-        System.IAsyncResult BeginParticipants(Chat.serv.ParticipantsRequest request, System.AsyncCallback callback, object asyncState);
-        
-        Chat.serv.ParticipantsResponse EndParticipants(System.IAsyncResult result);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Participants", ReplyAction="*")]
+        System.Threading.Tasks.Task<Chat.serv.ParticipantsResponse> ParticipantsAsync(Chat.serv.ParticipantsRequest request);
         
         // CODEGEN : La génération du contrat de message depuis le nom d'élément MessagesResult de l'espace de noms http://tempuri.org/ n'est pas marqué nillable
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Messages", ReplyAction="*")]
         Chat.serv.MessagesResponse Messages(Chat.serv.MessagesRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(AsyncPattern=true, Action="http://tempuri.org/Messages", ReplyAction="*")]
-        System.IAsyncResult BeginMessages(Chat.serv.MessagesRequest request, System.AsyncCallback callback, object asyncState);
-        
-        Chat.serv.MessagesResponse EndMessages(System.IAsyncResult result);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Messages", ReplyAction="*")]
+        System.Threading.Tasks.Task<Chat.serv.MessagesResponse> MessagesAsync(Chat.serv.MessagesRequest request);
         
         // CODEGEN : La génération du contrat de message depuis le nom d'élément pseudo de l'espace de noms http://tempuri.org/ n'est pas marqué nillable
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/DeleteParticipants", ReplyAction="*")]
         Chat.serv.DeleteParticipantsResponse DeleteParticipants(Chat.serv.DeleteParticipantsRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(AsyncPattern=true, Action="http://tempuri.org/DeleteParticipants", ReplyAction="*")]
-        System.IAsyncResult BeginDeleteParticipants(Chat.serv.DeleteParticipantsRequest request, System.AsyncCallback callback, object asyncState);
-        
-        Chat.serv.DeleteParticipantsResponse EndDeleteParticipants(System.IAsyncResult result);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/DeleteParticipants", ReplyAction="*")]
+        System.Threading.Tasks.Task<Chat.serv.DeleteParticipantsResponse> DeleteParticipantsAsync(Chat.serv.DeleteParticipantsRequest request);
         
         // CODEGEN : La génération du contrat de message depuis le nom d'élément message de l'espace de noms http://tempuri.org/ n'est pas marqué nillable
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/InsertMessage", ReplyAction="*")]
         Chat.serv.InsertMessageResponse InsertMessage(Chat.serv.InsertMessageRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(AsyncPattern=true, Action="http://tempuri.org/InsertMessage", ReplyAction="*")]
-        System.IAsyncResult BeginInsertMessage(Chat.serv.InsertMessageRequest request, System.AsyncCallback callback, object asyncState);
-        
-        Chat.serv.InsertMessageResponse EndInsertMessage(System.IAsyncResult result);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/InsertMessage", ReplyAction="*")]
+        System.Threading.Tasks.Task<Chat.serv.InsertMessageResponse> InsertMessageAsync(Chat.serv.InsertMessageRequest request);
         
         // CODEGEN : La génération du contrat de message depuis le nom d'élément pseudo de l'espace de noms http://tempuri.org/ n'est pas marqué nillable
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/getParticipantByPseudo", ReplyAction="*")]
         Chat.serv.getParticipantByPseudoResponse getParticipantByPseudo(Chat.serv.getParticipantByPseudoRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(AsyncPattern=true, Action="http://tempuri.org/getParticipantByPseudo", ReplyAction="*")]
-        System.IAsyncResult BegingetParticipantByPseudo(Chat.serv.getParticipantByPseudoRequest request, System.AsyncCallback callback, object asyncState);
-        
-        Chat.serv.getParticipantByPseudoResponse EndgetParticipantByPseudo(System.IAsyncResult result);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/getParticipantByPseudo", ReplyAction="*")]
+        System.Threading.Tasks.Task<Chat.serv.getParticipantByPseudoResponse> getParticipantByPseudoAsync(Chat.serv.getParticipantByPseudoRequest request);
         
         // CODEGEN : La génération du contrat de message depuis le nom d'élément getParticipantByIdResult de l'espace de noms http://tempuri.org/ n'est pas marqué nillable
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/getParticipantById", ReplyAction="*")]
         Chat.serv.getParticipantByIdResponse getParticipantById(Chat.serv.getParticipantByIdRequest request);
         
-        [System.ServiceModel.OperationContractAttribute(AsyncPattern=true, Action="http://tempuri.org/getParticipantById", ReplyAction="*")]
-        System.IAsyncResult BegingetParticipantById(Chat.serv.getParticipantByIdRequest request, System.AsyncCallback callback, object asyncState);
-        
-        Chat.serv.getParticipantByIdResponse EndgetParticipantById(System.IAsyncResult result);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/getParticipantById", ReplyAction="*")]
+        System.Threading.Tasks.Task<Chat.serv.getParticipantByIdResponse> getParticipantByIdAsync(Chat.serv.getParticipantByIdRequest request);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -717,144 +703,7 @@ namespace Chat.serv {
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class ParticiperCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        public ParticiperCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        public bool Result {
-            get {
-                base.RaiseExceptionIfNecessary();
-                return ((bool)(this.results[0]));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class ParticipantsCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        public ParticipantsCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        public Chat.serv.ArrayOfParticipant Result {
-            get {
-                base.RaiseExceptionIfNecessary();
-                return ((Chat.serv.ArrayOfParticipant)(this.results[0]));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class MessagesCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        public MessagesCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        public Chat.serv.Message[] Result {
-            get {
-                base.RaiseExceptionIfNecessary();
-                return ((Chat.serv.Message[])(this.results[0]));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class getParticipantByPseudoCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        public getParticipantByPseudoCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        public int Result {
-            get {
-                base.RaiseExceptionIfNecessary();
-                return ((int)(this.results[0]));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-    public partial class getParticipantByIdCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
-        
-        private object[] results;
-        
-        public getParticipantByIdCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
-                base(exception, cancelled, userState) {
-            this.results = results;
-        }
-        
-        public string Result {
-            get {
-                base.RaiseExceptionIfNecessary();
-                return ((string)(this.results[0]));
-            }
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     public partial class sws_chatSoapClient : System.ServiceModel.ClientBase<Chat.serv.sws_chatSoap>, Chat.serv.sws_chatSoap {
-        
-        private BeginOperationDelegate onBeginParticiperDelegate;
-        
-        private EndOperationDelegate onEndParticiperDelegate;
-        
-        private System.Threading.SendOrPostCallback onParticiperCompletedDelegate;
-        
-        private BeginOperationDelegate onBeginParticipantsDelegate;
-        
-        private EndOperationDelegate onEndParticipantsDelegate;
-        
-        private System.Threading.SendOrPostCallback onParticipantsCompletedDelegate;
-        
-        private BeginOperationDelegate onBeginMessagesDelegate;
-        
-        private EndOperationDelegate onEndMessagesDelegate;
-        
-        private System.Threading.SendOrPostCallback onMessagesCompletedDelegate;
-        
-        private BeginOperationDelegate onBeginDeleteParticipantsDelegate;
-        
-        private EndOperationDelegate onEndDeleteParticipantsDelegate;
-        
-        private System.Threading.SendOrPostCallback onDeleteParticipantsCompletedDelegate;
-        
-        private BeginOperationDelegate onBeginInsertMessageDelegate;
-        
-        private EndOperationDelegate onEndInsertMessageDelegate;
-        
-        private System.Threading.SendOrPostCallback onInsertMessageCompletedDelegate;
-        
-        private BeginOperationDelegate onBegingetParticipantByPseudoDelegate;
-        
-        private EndOperationDelegate onEndgetParticipantByPseudoDelegate;
-        
-        private System.Threading.SendOrPostCallback ongetParticipantByPseudoCompletedDelegate;
-        
-        private BeginOperationDelegate onBegingetParticipantByIdDelegate;
-        
-        private EndOperationDelegate onEndgetParticipantByIdDelegate;
-        
-        private System.Threading.SendOrPostCallback ongetParticipantByIdCompletedDelegate;
         
         public sws_chatSoapClient() {
         }
@@ -875,20 +724,6 @@ namespace Chat.serv {
                 base(binding, remoteAddress) {
         }
         
-        public event System.EventHandler<ParticiperCompletedEventArgs> ParticiperCompleted;
-        
-        public event System.EventHandler<ParticipantsCompletedEventArgs> ParticipantsCompleted;
-        
-        public event System.EventHandler<MessagesCompletedEventArgs> MessagesCompleted;
-        
-        public event System.EventHandler<System.ComponentModel.AsyncCompletedEventArgs> DeleteParticipantsCompleted;
-        
-        public event System.EventHandler<System.ComponentModel.AsyncCompletedEventArgs> InsertMessageCompleted;
-        
-        public event System.EventHandler<getParticipantByPseudoCompletedEventArgs> getParticipantByPseudoCompleted;
-        
-        public event System.EventHandler<getParticipantByIdCompletedEventArgs> getParticipantByIdCompleted;
-        
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
         Chat.serv.ParticiperResponse Chat.serv.sws_chatSoap.Participer(Chat.serv.ParticiperRequest request) {
             return base.Channel.Participer(request);
@@ -903,63 +738,15 @@ namespace Chat.serv {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.IAsyncResult Chat.serv.sws_chatSoap.BeginParticiper(Chat.serv.ParticiperRequest request, System.AsyncCallback callback, object asyncState) {
-            return base.Channel.BeginParticiper(request, callback, asyncState);
+        System.Threading.Tasks.Task<Chat.serv.ParticiperResponse> Chat.serv.sws_chatSoap.ParticiperAsync(Chat.serv.ParticiperRequest request) {
+            return base.Channel.ParticiperAsync(request);
         }
         
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        public System.IAsyncResult BeginParticiper(string pseudo, System.AsyncCallback callback, object asyncState) {
+        public System.Threading.Tasks.Task<Chat.serv.ParticiperResponse> ParticiperAsync(string pseudo) {
             Chat.serv.ParticiperRequest inValue = new Chat.serv.ParticiperRequest();
             inValue.Body = new Chat.serv.ParticiperRequestBody();
             inValue.Body.pseudo = pseudo;
-            return ((Chat.serv.sws_chatSoap)(this)).BeginParticiper(inValue, callback, asyncState);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Chat.serv.ParticiperResponse Chat.serv.sws_chatSoap.EndParticiper(System.IAsyncResult result) {
-            return base.Channel.EndParticiper(result);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        public bool EndParticiper(System.IAsyncResult result) {
-            Chat.serv.ParticiperResponse retVal = ((Chat.serv.sws_chatSoap)(this)).EndParticiper(result);
-            return retVal.Body.ParticiperResult;
-        }
-        
-        private System.IAsyncResult OnBeginParticiper(object[] inValues, System.AsyncCallback callback, object asyncState) {
-            string pseudo = ((string)(inValues[0]));
-            return this.BeginParticiper(pseudo, callback, asyncState);
-        }
-        
-        private object[] OnEndParticiper(System.IAsyncResult result) {
-            bool retVal = this.EndParticiper(result);
-            return new object[] {
-                    retVal};
-        }
-        
-        private void OnParticiperCompleted(object state) {
-            if ((this.ParticiperCompleted != null)) {
-                InvokeAsyncCompletedEventArgs e = ((InvokeAsyncCompletedEventArgs)(state));
-                this.ParticiperCompleted(this, new ParticiperCompletedEventArgs(e.Results, e.Error, e.Cancelled, e.UserState));
-            }
-        }
-        
-        public void ParticiperAsync(string pseudo) {
-            this.ParticiperAsync(pseudo, null);
-        }
-        
-        public void ParticiperAsync(string pseudo, object userState) {
-            if ((this.onBeginParticiperDelegate == null)) {
-                this.onBeginParticiperDelegate = new BeginOperationDelegate(this.OnBeginParticiper);
-            }
-            if ((this.onEndParticiperDelegate == null)) {
-                this.onEndParticiperDelegate = new EndOperationDelegate(this.OnEndParticiper);
-            }
-            if ((this.onParticiperCompletedDelegate == null)) {
-                this.onParticiperCompletedDelegate = new System.Threading.SendOrPostCallback(this.OnParticiperCompleted);
-            }
-            base.InvokeAsync(this.onBeginParticiperDelegate, new object[] {
-                        pseudo}, this.onEndParticiperDelegate, this.onParticiperCompletedDelegate, userState);
+            return ((Chat.serv.sws_chatSoap)(this)).ParticiperAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -975,60 +762,14 @@ namespace Chat.serv {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.IAsyncResult Chat.serv.sws_chatSoap.BeginParticipants(Chat.serv.ParticipantsRequest request, System.AsyncCallback callback, object asyncState) {
-            return base.Channel.BeginParticipants(request, callback, asyncState);
+        System.Threading.Tasks.Task<Chat.serv.ParticipantsResponse> Chat.serv.sws_chatSoap.ParticipantsAsync(Chat.serv.ParticipantsRequest request) {
+            return base.Channel.ParticipantsAsync(request);
         }
         
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        public System.IAsyncResult BeginParticipants(System.AsyncCallback callback, object asyncState) {
+        public System.Threading.Tasks.Task<Chat.serv.ParticipantsResponse> ParticipantsAsync() {
             Chat.serv.ParticipantsRequest inValue = new Chat.serv.ParticipantsRequest();
             inValue.Body = new Chat.serv.ParticipantsRequestBody();
-            return ((Chat.serv.sws_chatSoap)(this)).BeginParticipants(inValue, callback, asyncState);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Chat.serv.ParticipantsResponse Chat.serv.sws_chatSoap.EndParticipants(System.IAsyncResult result) {
-            return base.Channel.EndParticipants(result);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        public Chat.serv.ArrayOfParticipant EndParticipants(System.IAsyncResult result) {
-            Chat.serv.ParticipantsResponse retVal = ((Chat.serv.sws_chatSoap)(this)).EndParticipants(result);
-            return retVal.Body.ParticipantsResult;
-        }
-        
-        private System.IAsyncResult OnBeginParticipants(object[] inValues, System.AsyncCallback callback, object asyncState) {
-            return this.BeginParticipants(callback, asyncState);
-        }
-        
-        private object[] OnEndParticipants(System.IAsyncResult result) {
-            Chat.serv.ArrayOfParticipant retVal = this.EndParticipants(result);
-            return new object[] {
-                    retVal};
-        }
-        
-        private void OnParticipantsCompleted(object state) {
-            if ((this.ParticipantsCompleted != null)) {
-                InvokeAsyncCompletedEventArgs e = ((InvokeAsyncCompletedEventArgs)(state));
-                this.ParticipantsCompleted(this, new ParticipantsCompletedEventArgs(e.Results, e.Error, e.Cancelled, e.UserState));
-            }
-        }
-        
-        public void ParticipantsAsync() {
-            this.ParticipantsAsync(null);
-        }
-        
-        public void ParticipantsAsync(object userState) {
-            if ((this.onBeginParticipantsDelegate == null)) {
-                this.onBeginParticipantsDelegate = new BeginOperationDelegate(this.OnBeginParticipants);
-            }
-            if ((this.onEndParticipantsDelegate == null)) {
-                this.onEndParticipantsDelegate = new EndOperationDelegate(this.OnEndParticipants);
-            }
-            if ((this.onParticipantsCompletedDelegate == null)) {
-                this.onParticipantsCompletedDelegate = new System.Threading.SendOrPostCallback(this.OnParticipantsCompleted);
-            }
-            base.InvokeAsync(this.onBeginParticipantsDelegate, null, this.onEndParticipantsDelegate, this.onParticipantsCompletedDelegate, userState);
+            return ((Chat.serv.sws_chatSoap)(this)).ParticipantsAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -1044,60 +785,14 @@ namespace Chat.serv {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.IAsyncResult Chat.serv.sws_chatSoap.BeginMessages(Chat.serv.MessagesRequest request, System.AsyncCallback callback, object asyncState) {
-            return base.Channel.BeginMessages(request, callback, asyncState);
+        System.Threading.Tasks.Task<Chat.serv.MessagesResponse> Chat.serv.sws_chatSoap.MessagesAsync(Chat.serv.MessagesRequest request) {
+            return base.Channel.MessagesAsync(request);
         }
         
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        public System.IAsyncResult BeginMessages(System.AsyncCallback callback, object asyncState) {
+        public System.Threading.Tasks.Task<Chat.serv.MessagesResponse> MessagesAsync() {
             Chat.serv.MessagesRequest inValue = new Chat.serv.MessagesRequest();
             inValue.Body = new Chat.serv.MessagesRequestBody();
-            return ((Chat.serv.sws_chatSoap)(this)).BeginMessages(inValue, callback, asyncState);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Chat.serv.MessagesResponse Chat.serv.sws_chatSoap.EndMessages(System.IAsyncResult result) {
-            return base.Channel.EndMessages(result);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        public Chat.serv.Message[] EndMessages(System.IAsyncResult result) {
-            Chat.serv.MessagesResponse retVal = ((Chat.serv.sws_chatSoap)(this)).EndMessages(result);
-            return retVal.Body.MessagesResult;
-        }
-        
-        private System.IAsyncResult OnBeginMessages(object[] inValues, System.AsyncCallback callback, object asyncState) {
-            return this.BeginMessages(callback, asyncState);
-        }
-        
-        private object[] OnEndMessages(System.IAsyncResult result) {
-            Chat.serv.Message[] retVal = this.EndMessages(result);
-            return new object[] {
-                    retVal};
-        }
-        
-        private void OnMessagesCompleted(object state) {
-            if ((this.MessagesCompleted != null)) {
-                InvokeAsyncCompletedEventArgs e = ((InvokeAsyncCompletedEventArgs)(state));
-                this.MessagesCompleted(this, new MessagesCompletedEventArgs(e.Results, e.Error, e.Cancelled, e.UserState));
-            }
-        }
-        
-        public void MessagesAsync() {
-            this.MessagesAsync(null);
-        }
-        
-        public void MessagesAsync(object userState) {
-            if ((this.onBeginMessagesDelegate == null)) {
-                this.onBeginMessagesDelegate = new BeginOperationDelegate(this.OnBeginMessages);
-            }
-            if ((this.onEndMessagesDelegate == null)) {
-                this.onEndMessagesDelegate = new EndOperationDelegate(this.OnEndMessages);
-            }
-            if ((this.onMessagesCompletedDelegate == null)) {
-                this.onMessagesCompletedDelegate = new System.Threading.SendOrPostCallback(this.OnMessagesCompleted);
-            }
-            base.InvokeAsync(this.onBeginMessagesDelegate, null, this.onEndMessagesDelegate, this.onMessagesCompletedDelegate, userState);
+            return ((Chat.serv.sws_chatSoap)(this)).MessagesAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -1114,64 +809,16 @@ namespace Chat.serv {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.IAsyncResult Chat.serv.sws_chatSoap.BeginDeleteParticipants(Chat.serv.DeleteParticipantsRequest request, System.AsyncCallback callback, object asyncState) {
-            return base.Channel.BeginDeleteParticipants(request, callback, asyncState);
+        System.Threading.Tasks.Task<Chat.serv.DeleteParticipantsResponse> Chat.serv.sws_chatSoap.DeleteParticipantsAsync(Chat.serv.DeleteParticipantsRequest request) {
+            return base.Channel.DeleteParticipantsAsync(request);
         }
         
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        public System.IAsyncResult BeginDeleteParticipants(string pseudo, int id, System.AsyncCallback callback, object asyncState) {
+        public System.Threading.Tasks.Task<Chat.serv.DeleteParticipantsResponse> DeleteParticipantsAsync(string pseudo, int id) {
             Chat.serv.DeleteParticipantsRequest inValue = new Chat.serv.DeleteParticipantsRequest();
             inValue.Body = new Chat.serv.DeleteParticipantsRequestBody();
             inValue.Body.pseudo = pseudo;
             inValue.Body.id = id;
-            return ((Chat.serv.sws_chatSoap)(this)).BeginDeleteParticipants(inValue, callback, asyncState);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Chat.serv.DeleteParticipantsResponse Chat.serv.sws_chatSoap.EndDeleteParticipants(System.IAsyncResult result) {
-            return base.Channel.EndDeleteParticipants(result);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        public void EndDeleteParticipants(System.IAsyncResult result) {
-            Chat.serv.DeleteParticipantsResponse retVal = ((Chat.serv.sws_chatSoap)(this)).EndDeleteParticipants(result);
-        }
-        
-        private System.IAsyncResult OnBeginDeleteParticipants(object[] inValues, System.AsyncCallback callback, object asyncState) {
-            string pseudo = ((string)(inValues[0]));
-            int id = ((int)(inValues[1]));
-            return this.BeginDeleteParticipants(pseudo, id, callback, asyncState);
-        }
-        
-        private object[] OnEndDeleteParticipants(System.IAsyncResult result) {
-            this.EndDeleteParticipants(result);
-            return null;
-        }
-        
-        private void OnDeleteParticipantsCompleted(object state) {
-            if ((this.DeleteParticipantsCompleted != null)) {
-                InvokeAsyncCompletedEventArgs e = ((InvokeAsyncCompletedEventArgs)(state));
-                this.DeleteParticipantsCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(e.Error, e.Cancelled, e.UserState));
-            }
-        }
-        
-        public void DeleteParticipantsAsync(string pseudo, int id) {
-            this.DeleteParticipantsAsync(pseudo, id, null);
-        }
-        
-        public void DeleteParticipantsAsync(string pseudo, int id, object userState) {
-            if ((this.onBeginDeleteParticipantsDelegate == null)) {
-                this.onBeginDeleteParticipantsDelegate = new BeginOperationDelegate(this.OnBeginDeleteParticipants);
-            }
-            if ((this.onEndDeleteParticipantsDelegate == null)) {
-                this.onEndDeleteParticipantsDelegate = new EndOperationDelegate(this.OnEndDeleteParticipants);
-            }
-            if ((this.onDeleteParticipantsCompletedDelegate == null)) {
-                this.onDeleteParticipantsCompletedDelegate = new System.Threading.SendOrPostCallback(this.OnDeleteParticipantsCompleted);
-            }
-            base.InvokeAsync(this.onBeginDeleteParticipantsDelegate, new object[] {
-                        pseudo,
-                        id}, this.onEndDeleteParticipantsDelegate, this.onDeleteParticipantsCompletedDelegate, userState);
+            return ((Chat.serv.sws_chatSoap)(this)).DeleteParticipantsAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -1188,64 +835,16 @@ namespace Chat.serv {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.IAsyncResult Chat.serv.sws_chatSoap.BeginInsertMessage(Chat.serv.InsertMessageRequest request, System.AsyncCallback callback, object asyncState) {
-            return base.Channel.BeginInsertMessage(request, callback, asyncState);
+        System.Threading.Tasks.Task<Chat.serv.InsertMessageResponse> Chat.serv.sws_chatSoap.InsertMessageAsync(Chat.serv.InsertMessageRequest request) {
+            return base.Channel.InsertMessageAsync(request);
         }
         
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        public System.IAsyncResult BeginInsertMessage(string message, int id, System.AsyncCallback callback, object asyncState) {
+        public System.Threading.Tasks.Task<Chat.serv.InsertMessageResponse> InsertMessageAsync(string message, int id) {
             Chat.serv.InsertMessageRequest inValue = new Chat.serv.InsertMessageRequest();
             inValue.Body = new Chat.serv.InsertMessageRequestBody();
             inValue.Body.message = message;
             inValue.Body.id = id;
-            return ((Chat.serv.sws_chatSoap)(this)).BeginInsertMessage(inValue, callback, asyncState);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Chat.serv.InsertMessageResponse Chat.serv.sws_chatSoap.EndInsertMessage(System.IAsyncResult result) {
-            return base.Channel.EndInsertMessage(result);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        public void EndInsertMessage(System.IAsyncResult result) {
-            Chat.serv.InsertMessageResponse retVal = ((Chat.serv.sws_chatSoap)(this)).EndInsertMessage(result);
-        }
-        
-        private System.IAsyncResult OnBeginInsertMessage(object[] inValues, System.AsyncCallback callback, object asyncState) {
-            string message = ((string)(inValues[0]));
-            int id = ((int)(inValues[1]));
-            return this.BeginInsertMessage(message, id, callback, asyncState);
-        }
-        
-        private object[] OnEndInsertMessage(System.IAsyncResult result) {
-            this.EndInsertMessage(result);
-            return null;
-        }
-        
-        private void OnInsertMessageCompleted(object state) {
-            if ((this.InsertMessageCompleted != null)) {
-                InvokeAsyncCompletedEventArgs e = ((InvokeAsyncCompletedEventArgs)(state));
-                this.InsertMessageCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(e.Error, e.Cancelled, e.UserState));
-            }
-        }
-        
-        public void InsertMessageAsync(string message, int id) {
-            this.InsertMessageAsync(message, id, null);
-        }
-        
-        public void InsertMessageAsync(string message, int id, object userState) {
-            if ((this.onBeginInsertMessageDelegate == null)) {
-                this.onBeginInsertMessageDelegate = new BeginOperationDelegate(this.OnBeginInsertMessage);
-            }
-            if ((this.onEndInsertMessageDelegate == null)) {
-                this.onEndInsertMessageDelegate = new EndOperationDelegate(this.OnEndInsertMessage);
-            }
-            if ((this.onInsertMessageCompletedDelegate == null)) {
-                this.onInsertMessageCompletedDelegate = new System.Threading.SendOrPostCallback(this.OnInsertMessageCompleted);
-            }
-            base.InvokeAsync(this.onBeginInsertMessageDelegate, new object[] {
-                        message,
-                        id}, this.onEndInsertMessageDelegate, this.onInsertMessageCompletedDelegate, userState);
+            return ((Chat.serv.sws_chatSoap)(this)).InsertMessageAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -1262,63 +861,15 @@ namespace Chat.serv {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.IAsyncResult Chat.serv.sws_chatSoap.BegingetParticipantByPseudo(Chat.serv.getParticipantByPseudoRequest request, System.AsyncCallback callback, object asyncState) {
-            return base.Channel.BegingetParticipantByPseudo(request, callback, asyncState);
+        System.Threading.Tasks.Task<Chat.serv.getParticipantByPseudoResponse> Chat.serv.sws_chatSoap.getParticipantByPseudoAsync(Chat.serv.getParticipantByPseudoRequest request) {
+            return base.Channel.getParticipantByPseudoAsync(request);
         }
         
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        public System.IAsyncResult BegingetParticipantByPseudo(string pseudo, System.AsyncCallback callback, object asyncState) {
+        public System.Threading.Tasks.Task<Chat.serv.getParticipantByPseudoResponse> getParticipantByPseudoAsync(string pseudo) {
             Chat.serv.getParticipantByPseudoRequest inValue = new Chat.serv.getParticipantByPseudoRequest();
             inValue.Body = new Chat.serv.getParticipantByPseudoRequestBody();
             inValue.Body.pseudo = pseudo;
-            return ((Chat.serv.sws_chatSoap)(this)).BegingetParticipantByPseudo(inValue, callback, asyncState);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Chat.serv.getParticipantByPseudoResponse Chat.serv.sws_chatSoap.EndgetParticipantByPseudo(System.IAsyncResult result) {
-            return base.Channel.EndgetParticipantByPseudo(result);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        public int EndgetParticipantByPseudo(System.IAsyncResult result) {
-            Chat.serv.getParticipantByPseudoResponse retVal = ((Chat.serv.sws_chatSoap)(this)).EndgetParticipantByPseudo(result);
-            return retVal.Body.getParticipantByPseudoResult;
-        }
-        
-        private System.IAsyncResult OnBegingetParticipantByPseudo(object[] inValues, System.AsyncCallback callback, object asyncState) {
-            string pseudo = ((string)(inValues[0]));
-            return this.BegingetParticipantByPseudo(pseudo, callback, asyncState);
-        }
-        
-        private object[] OnEndgetParticipantByPseudo(System.IAsyncResult result) {
-            int retVal = this.EndgetParticipantByPseudo(result);
-            return new object[] {
-                    retVal};
-        }
-        
-        private void OngetParticipantByPseudoCompleted(object state) {
-            if ((this.getParticipantByPseudoCompleted != null)) {
-                InvokeAsyncCompletedEventArgs e = ((InvokeAsyncCompletedEventArgs)(state));
-                this.getParticipantByPseudoCompleted(this, new getParticipantByPseudoCompletedEventArgs(e.Results, e.Error, e.Cancelled, e.UserState));
-            }
-        }
-        
-        public void getParticipantByPseudoAsync(string pseudo) {
-            this.getParticipantByPseudoAsync(pseudo, null);
-        }
-        
-        public void getParticipantByPseudoAsync(string pseudo, object userState) {
-            if ((this.onBegingetParticipantByPseudoDelegate == null)) {
-                this.onBegingetParticipantByPseudoDelegate = new BeginOperationDelegate(this.OnBegingetParticipantByPseudo);
-            }
-            if ((this.onEndgetParticipantByPseudoDelegate == null)) {
-                this.onEndgetParticipantByPseudoDelegate = new EndOperationDelegate(this.OnEndgetParticipantByPseudo);
-            }
-            if ((this.ongetParticipantByPseudoCompletedDelegate == null)) {
-                this.ongetParticipantByPseudoCompletedDelegate = new System.Threading.SendOrPostCallback(this.OngetParticipantByPseudoCompleted);
-            }
-            base.InvokeAsync(this.onBegingetParticipantByPseudoDelegate, new object[] {
-                        pseudo}, this.onEndgetParticipantByPseudoDelegate, this.ongetParticipantByPseudoCompletedDelegate, userState);
+            return ((Chat.serv.sws_chatSoap)(this)).getParticipantByPseudoAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
@@ -1335,63 +886,15 @@ namespace Chat.serv {
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.IAsyncResult Chat.serv.sws_chatSoap.BegingetParticipantById(Chat.serv.getParticipantByIdRequest request, System.AsyncCallback callback, object asyncState) {
-            return base.Channel.BegingetParticipantById(request, callback, asyncState);
+        System.Threading.Tasks.Task<Chat.serv.getParticipantByIdResponse> Chat.serv.sws_chatSoap.getParticipantByIdAsync(Chat.serv.getParticipantByIdRequest request) {
+            return base.Channel.getParticipantByIdAsync(request);
         }
         
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        public System.IAsyncResult BegingetParticipantById(int id, System.AsyncCallback callback, object asyncState) {
+        public System.Threading.Tasks.Task<Chat.serv.getParticipantByIdResponse> getParticipantByIdAsync(int id) {
             Chat.serv.getParticipantByIdRequest inValue = new Chat.serv.getParticipantByIdRequest();
             inValue.Body = new Chat.serv.getParticipantByIdRequestBody();
             inValue.Body.id = id;
-            return ((Chat.serv.sws_chatSoap)(this)).BegingetParticipantById(inValue, callback, asyncState);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        Chat.serv.getParticipantByIdResponse Chat.serv.sws_chatSoap.EndgetParticipantById(System.IAsyncResult result) {
-            return base.Channel.EndgetParticipantById(result);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        public string EndgetParticipantById(System.IAsyncResult result) {
-            Chat.serv.getParticipantByIdResponse retVal = ((Chat.serv.sws_chatSoap)(this)).EndgetParticipantById(result);
-            return retVal.Body.getParticipantByIdResult;
-        }
-        
-        private System.IAsyncResult OnBegingetParticipantById(object[] inValues, System.AsyncCallback callback, object asyncState) {
-            int id = ((int)(inValues[0]));
-            return this.BegingetParticipantById(id, callback, asyncState);
-        }
-        
-        private object[] OnEndgetParticipantById(System.IAsyncResult result) {
-            string retVal = this.EndgetParticipantById(result);
-            return new object[] {
-                    retVal};
-        }
-        
-        private void OngetParticipantByIdCompleted(object state) {
-            if ((this.getParticipantByIdCompleted != null)) {
-                InvokeAsyncCompletedEventArgs e = ((InvokeAsyncCompletedEventArgs)(state));
-                this.getParticipantByIdCompleted(this, new getParticipantByIdCompletedEventArgs(e.Results, e.Error, e.Cancelled, e.UserState));
-            }
-        }
-        
-        public void getParticipantByIdAsync(int id) {
-            this.getParticipantByIdAsync(id, null);
-        }
-        
-        public void getParticipantByIdAsync(int id, object userState) {
-            if ((this.onBegingetParticipantByIdDelegate == null)) {
-                this.onBegingetParticipantByIdDelegate = new BeginOperationDelegate(this.OnBegingetParticipantById);
-            }
-            if ((this.onEndgetParticipantByIdDelegate == null)) {
-                this.onEndgetParticipantByIdDelegate = new EndOperationDelegate(this.OnEndgetParticipantById);
-            }
-            if ((this.ongetParticipantByIdCompletedDelegate == null)) {
-                this.ongetParticipantByIdCompletedDelegate = new System.Threading.SendOrPostCallback(this.OngetParticipantByIdCompleted);
-            }
-            base.InvokeAsync(this.onBegingetParticipantByIdDelegate, new object[] {
-                        id}, this.onEndgetParticipantByIdDelegate, this.ongetParticipantByIdCompletedDelegate, userState);
+            return ((Chat.serv.sws_chatSoap)(this)).getParticipantByIdAsync(inValue);
         }
     }
 }

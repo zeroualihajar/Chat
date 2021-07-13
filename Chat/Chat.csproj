@@ -105,8 +105,36 @@
     <None Include="Connected Services\serv\Chat.serv.ArrayOfParticipant.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
     </None>
+    <None Include="Connected Services\serv\Chat.serv.DeleteParticipantsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\serv\Chat.serv.getParticipantByIdResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\serv\Chat.serv.getParticipantByPseudoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\serv\Chat.serv.InsertMessageResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
     <None Include="Connected Services\serv\Chat.serv.Message.datasource">
       <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\serv\Chat.serv.MessagesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\serv\Chat.serv.ParticipantsResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\serv\Chat.serv.ParticiperResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Connected Services\serv\sws_chat.disco" />
+    <None Include="Connected Services\serv\configuration91.svcinfo" />
+    <None Include="Connected Services\serv\configuration.svcinfo" />
+    <None Include="Connected Services\serv\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
     <None Include="Connected Services\serv\sws_chat.wsdl" />
     <None Include="Properties\Settings.settings">
@@ -142,21 +170,6 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadataStorage Include="Connected Services\serv\" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Connected Services\serv\sws_chat.disco" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Connected Services\serv\configuration91.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Connected Services\serv\configuration.svcinfo" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Connected Services\serv\Reference.svcmap">
-      <Generator>WCF Proxy Generator</Generator>
-      <LastGenOutput>Reference.cs</LastGenOutput>
-    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

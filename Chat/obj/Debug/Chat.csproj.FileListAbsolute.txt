@@ -3,10 +3,11 @@ C:\Users\Probook\Desktop\LSI\Technologie .net\Projet\Chat\Chat\bin\Debug\Chat.ex
 C:\Users\Probook\Desktop\LSI\Technologie .net\Projet\Chat\Chat\bin\Debug\Chat.pdb
 C:\Users\Probook\Desktop\LSI\Technologie .net\Projet\Chat\Chat\obj\Debug\Chat.Form1.resources
 C:\Users\Probook\Desktop\LSI\Technologie .net\Projet\Chat\Chat\obj\Debug\Chat.Properties.Resources.resources
+C:\Users\Probook\Desktop\LSI\Technologie .net\Projet\Chat\Chat\obj\Debug\Chat.Salon.resources
+C:\Users\Probook\Desktop\LSI\Technologie .net\Projet\Chat\Chat\obj\Debug\Chat.UC.ucMessage.resources
+C:\Users\Probook\Desktop\LSI\Technologie .net\Projet\Chat\Chat\obj\Debug\Chat.UC.ucParticipant.resources
 C:\Users\Probook\Desktop\LSI\Technologie .net\Projet\Chat\Chat\obj\Debug\Chat.csproj.GenerateResource.cache
 C:\Users\Probook\Desktop\LSI\Technologie .net\Projet\Chat\Chat\obj\Debug\Chat.csproj.CoreCompileInputs.cache
 C:\Users\Probook\Desktop\LSI\Technologie .net\Projet\Chat\Chat\obj\Debug\Chat.exe
 C:\Users\Probook\Desktop\LSI\Technologie .net\Projet\Chat\Chat\obj\Debug\Chat.pdb
-C:\Users\Probook\Desktop\LSI\Technologie .net\Projet\Chat\Chat\obj\Debug\Chat.Salon.resources
-C:\Users\Probook\Desktop\LSI\Technologie .net\Projet\Chat\Chat\obj\Debug\Chat.UC.ucMessage.resources
-C:\Users\Probook\Desktop\LSI\Technologie .net\Projet\Chat\Chat\obj\Debug\Chat.UC.ucParticipant.resources
+C:\Users\Probook\Desktop\LSI\Technologie .net\Projet\Chat\Chat\obj\Debug\Chat.csprojAssemblyReference.cache

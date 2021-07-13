@@ -78,7 +78,6 @@
       <DependentUpon>DC.dbml</DependentUpon>
     </Compile>
     <Compile Include="Outil.cs" />
-    <Compile Include="Participant.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="sws_chat.asmx.cs">
       <DependentUpon>sws_chat.asmx</DependentUpon>

@@ -27,7 +27,7 @@ namespace WS
             return messages;
         }
 
-        /*static public bool Exists(string pseudo)
+        static public bool Exists(string pseudo)
         {
             participants = GetParticipants();
 
@@ -36,10 +36,10 @@ namespace WS
                 if (pr.pseudo.Equals(pseudo)) return true;
             }
             return false;
-        }*/
+        }
 
 
-        static public bool Exists(string pseudo)
+        /*static public bool Exists(string pseudo)
         {
             string ps;
 
@@ -65,12 +65,12 @@ namespace WS
             connect.Close();
 
             return false;
-        }
+        }*/
 
         static public void insertParticipant(string pseudo)
         {
             // ----Creer  la connexion vers la base des données
-            SqlConnection connect = new SqlConnection(@"Data Source=DESKTOP-7N0GOOF; Initial Catalog=Chat; Integrated Security =True");
+            SqlConnection connect = new SqlConnection(@"Data Source=localhost; Initial Catalog=Chat; Integrated Security =True");
 
             //---- ouvrir la connexion
             connect.Open();
@@ -89,7 +89,7 @@ namespace WS
         static public void deleteFromMessage(int id)
         {
             // ----Creer  la connexion vers la base des données
-            SqlConnection connect = new SqlConnection(@"Data Source=DESKTOP-7N0GOOF; Initial Catalog=Chat; Integrated Security =True");
+            SqlConnection connect = new SqlConnection(@"Data Source=localhost; Initial Catalog=Chat; Integrated Security =True");
 
             //---- ouvrir la connexion
             connect.Open();
@@ -107,7 +107,7 @@ namespace WS
         {
             deleteFromMessage(id);
             // ----Creer  la connexion vers la base des données
-            SqlConnection connect = new SqlConnection(@"Data Source=DESKTOP-7N0GOOF; Initial Catalog=Chat; Integrated Security =True");
+            SqlConnection connect = new SqlConnection(@"Data Source=localhost; Initial Catalog=Chat; Integrated Security =True");
 
             //---- ouvrir la connexion
             connect.Open();
@@ -126,7 +126,7 @@ namespace WS
         static public void Insert(string message, int id)
         {
             // ----Creer  la connexion vers la base des données
-            SqlConnection connect = new SqlConnection(@"Data Source=DESKTOP-7N0GOOF; Initial Catalog=Chat; Integrated Security =True");
+            SqlConnection connect = new SqlConnection(@"Data Source=localhost; Initial Catalog=Chat; Integrated Security =True");
 
             //---- ouvrir la connexion
             connect.Open();
@@ -146,7 +146,7 @@ namespace WS
         {
             int id = 0;
             // ----Creer  la connexion vers la base des données
-            SqlConnection connect = new SqlConnection(@"Data Source=DESKTOP-7N0GOOF; Initial Catalog=Chat; Integrated Security =True");
+            SqlConnection connect = new SqlConnection(@"Data Source=localhost; Initial Catalog=Chat; Integrated Security =True");
 
             //---- ouvrir la connexion
             connect.Open();
@@ -174,7 +174,7 @@ namespace WS
         {
             string pseudo = "";
             // ----Creer  la connexion vers la base des données
-            SqlConnection connect = new SqlConnection(@"Data Source=DESKTOP-7N0GOOF; Initial Catalog=Chat; Integrated Security =True");
+            SqlConnection connect = new SqlConnection(@"Data Source=localhost; Initial Catalog=Chat; Integrated Security =True");
 
             //---- ouvrir la connexion
             connect.Open();
