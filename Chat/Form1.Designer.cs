@@ -101,7 +101,7 @@ namespace Chat
             // lblChangePseudo
             // 
             this.lblChangePseudo.AutoSize = true;
-            this.lblChangePseudo.Font = new System.Drawing.Font("Palatino Linotype", 16.2F);
+            this.lblChangePseudo.Font = new System.Drawing.Font("Palatino Linotype", 9.2F);
             this.lblChangePseudo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
             this.lblChangePseudo.Location = new System.Drawing.Point(52, 303);
             this.lblChangePseudo.Name = "lblChangePseudo";

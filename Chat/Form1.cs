@@ -35,7 +35,7 @@ namespace Chat
             }
             else
             {
-                lblChangePseudo.Text = "Ce pseudo existe deja! essayer de le changer";
+                lblChangePseudo.Text = "Ce pseudo existe deja! \n essayer de le changer";
                 lblChangePseudo.Visible = true;
             }
         }

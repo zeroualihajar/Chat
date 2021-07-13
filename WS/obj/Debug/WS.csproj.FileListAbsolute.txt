@@ -56,3 +56,4 @@ C:\Users\Probook\Desktop\LSI\Technologie .net\Projet\Chat\WS\obj\Debug\WS.csproj
 C:\Users\Probook\Desktop\LSI\Technologie .net\Projet\Chat\WS\obj\Debug\WS.csproj.CopyComplete
 C:\Users\Probook\Desktop\LSI\Technologie .net\Projet\Chat\WS\obj\Debug\WS.dll
 C:\Users\Probook\Desktop\LSI\Technologie .net\Projet\Chat\WS\obj\Debug\WS.pdb
+C:\Users\Probook\Desktop\LSI\Technologie .net\Projet\Chat\WS\obj\Debug\WS.csprojAssemblyReference.cache
